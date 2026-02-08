@@ -1,7 +1,7 @@
 import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import BookCard from '../components/bookCard';
-import { categories } from '../utils/booksData';
+import { categories } from '/Users/dasarisaiteja/Desktop/intenshala/online library system/vite-project/src/utils/BooksData.js';
 import './home.css';
 
 function Home() {
