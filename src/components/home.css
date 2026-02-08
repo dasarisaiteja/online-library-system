@@ -1,21 +1,10 @@
-/* ==========================================
-   BEGINNER-FRIENDLY CSS - home.css
-   This file styles the home page
-   ========================================== */
 
-/* ------------------------------------
-   HOME PAGE CONTAINER
-   ------------------------------------ */
 .home-page {
   max-width: 1400px;
-  margin: 0 auto; /* Center the page */
+  margin: 0 auto; 
   padding: 30px;
 }
 
-/* ------------------------------------
-   HERO SECTION (Top Banner)
-   The colorful welcome section
-   ------------------------------------ */
 .hero-section {
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   border-radius: 20px;
@@ -64,14 +53,10 @@
 
 /* Button hover effect */
 .cta-button:hover {
-  transform: translateY(-3px); /* Move up slightly */
+  transform: translateY(-3px); 
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
 }
 
-/* ------------------------------------
-   FLOATING BOOKS DECORATION
-   The animated book emojis on the right
-   ------------------------------------ */
 .hero-decoration {
   position: absolute;
   right: 5%;
@@ -96,9 +81,6 @@
   right: 50px;
 }
 
-/* ------------------------------------
-   SECTION TITLES
-   ------------------------------------ */
 .section-title {
   font-size: 36px;
   color: var(--dark-text);
@@ -113,10 +95,6 @@
   margin-bottom: 50px;
 }
 
-/* ------------------------------------
-   CATEGORIES SECTION
-   The grid of category cards
-   ------------------------------------ */
 .categories-section {
   margin-bottom: 60px;
 }
@@ -124,7 +102,7 @@
 /* Grid layout for categories */
 .categories-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 columns */
+  grid-template-columns: repeat(4, 1fr); 
   gap: 25px;
   margin-top: 30px;
 }
@@ -142,7 +120,7 @@
 /* Card hover effect */
 .category-card:hover {
   border-color: var(--blue);
-  transform: translateY(-8px); /* Move up */
+  transform: translateY(-8px); 
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
 
@@ -168,9 +146,6 @@
   font-weight: 500;
 }
 
-/* ------------------------------------
-   POPULAR BOOKS SECTION
-   ------------------------------------ */
 .popular-books-section {
   margin-bottom: 60px;
 }
@@ -178,14 +153,11 @@
 /* Grid for book cards */
 .books-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  grid-template-columns: repeat(3, 1fr); 
   gap: 30px;
   margin-top: 30px;
 }
 
-/* ------------------------------------
-   RESPONSIVE DESIGN
-   ------------------------------------ */
 
 /* For tablets */
 @media (max-width: 1024px) {
@@ -198,15 +170,15 @@
   }
   
   .hero-decoration {
-    display: none; /* Hide floating books */
+    display: none; 
   }
   
   .categories-grid {
-    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    grid-template-columns: repeat(2, 1fr); 
   }
   
   .books-grid {
-    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -239,12 +211,12 @@
   }
   
   .categories-grid {
-    grid-template-columns: 1fr; /* 1 column */
+    grid-template-columns: 1fr; 
     gap: 20px;
   }
   
   .books-grid {
-    grid-template-columns: 1fr; /* 1 column */
+    grid-template-columns: 1fr; 
     gap: 25px;
   }
 }

@@ -1,25 +1,13 @@
-/* ==========================================
-   BEGINNER-FRIENDLY CSS - notFound.css
-   This file styles the 404 error page
-   ========================================== */
 
-/* ------------------------------------
-   NOT FOUND PAGE CONTAINER
-   Full screen with purple gradient background
-   ------------------------------------ */
 .not-found-page {
-  min-height: 100vh; /* Full screen height */
+  min-height: 100vh; 
   display: flex;
-  align-items: center; /* Center vertically */
-  justify-content: center; /* Center horizontally */
+  align-items: center; 
+  justify-content: center; 
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   padding: 30px;
 }
 
-/* ------------------------------------
-   CONTENT CONTAINER
-   The white box in the center
-   ------------------------------------ */
 .not-found-container {
   background: white;
   border-radius: 20px;
@@ -30,10 +18,6 @@
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
 }
 
-/* ------------------------------------
-   ERROR CODE (404)
-   The big "404" number
-   ------------------------------------ */
 .error-code {
   font-size: 128px;
   font-weight: 900;
@@ -45,10 +29,6 @@
   margin-bottom: 15px;
 }
 
-/* ------------------------------------
-   ERROR TITLE
-   "Page Not Found" heading
-   ------------------------------------ */
 .error-title {
   font-size: 40px;
   color: var(--dark-text);
@@ -56,10 +36,6 @@
   font-weight: 800;
 }
 
-/* ------------------------------------
-   ERROR MESSAGE
-   Explanation text
-   ------------------------------------ */
 .error-message {
   font-size: 18px;
   color: var(--gray-text);
@@ -67,10 +43,6 @@
   line-height: 1.6;
 }
 
-/* ------------------------------------
-   INVALID ROUTE BOX
-   Shows the wrong URL that was entered
-   ------------------------------------ */
 .invalid-route {
   background: var(--lighter-gray);
   border-radius: 8px;
@@ -87,26 +59,22 @@
   font-size: 14px;
   color: var(--light-text);
   font-weight: 600;
-  text-transform: uppercase; /* ALL CAPS */
+  text-transform: uppercase; 
   letter-spacing: 0.5px;
 }
 
 /* The actual URL path */
 .route-path {
-  font-family: 'Courier New', monospace; /* Code font */
+  font-family: 'Courier New', monospace; 
   font-size: 16px;
   color: var(--red);
   background: white;
   padding: 8px 15px;
   border-radius: 6px;
   border: 1px solid var(--border-gray);
-  word-break: break-all; /* Break long URLs */
+  word-break: break-all; 
 }
 
-/* ------------------------------------
-   ERROR ILLUSTRATION
-   The three animated book emojis
-   ------------------------------------ */
 .error-illustration {
   margin: 40px 0;
   display: flex;
@@ -147,14 +115,10 @@
   transform: scale(1.1);
 }
 
-/* ------------------------------------
-   HOME LINK BUTTON
-   "Return to Home" button
-   ------------------------------------ */
 .home-link {
   display: inline-flex;
   align-items: center;
-  gap: 12px; /* Space between arrow and text */
+  gap: 12px; 
   background: linear-gradient(135deg, var(--blue), var(--purple));
   color: white;
   padding: 16px 40px;
@@ -166,7 +130,7 @@
 
 /* Button hover effect */
 .home-link:hover {
-  transform: translateY(-3px); /* Move up */
+  transform: translateY(-3px);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
 }
 
@@ -175,9 +139,6 @@
   transform: translateY(-1px);
 }
 
-/* ------------------------------------
-   RESPONSIVE DESIGN
-   ------------------------------------ */
 
 /* For tablets */
 @media (max-width: 768px) {

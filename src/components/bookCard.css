@@ -1,37 +1,25 @@
-/* ==========================================
-   BEGINNER-FRIENDLY CSS - bookCard.css
-   This file styles each individual book card
-   ========================================== */
 
-/* ------------------------------------
-   BOOK CARD CONTAINER
-   The entire card wrapper
-   ------------------------------------ */
 .book-card {
   background: white;
   border-radius: 12px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  overflow: hidden; /* Keep rounded corners */
+  overflow: hidden; 
   display: flex;
-  flex-direction: column; /* Stack items vertically */
+  flex-direction: column; 
   height: 100%;
   border: 1px solid var(--border-gray);
 }
 
 /* Card hover effect */
 .book-card:hover {
-  transform: translateY(-8px); /* Move up */
+  transform: translateY(-8px); 
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
   border-color: var(--blue);
 }
 
-/* ------------------------------------
-   CARD HEADER
-   Top section with category and rating
-   ------------------------------------ */
 .book-card-header {
   display: flex;
-  justify-content: space-between; /* Space items apart */
+  justify-content: space-between; 
   align-items: center;
   padding: 20px 25px 12px;
   border-bottom: 1px solid var(--border-gray);
@@ -45,7 +33,7 @@
   border-radius: 8px;
   font-size: 12px;
   font-weight: 600;
-  text-transform: uppercase; /* ALL CAPS */
+  text-transform: uppercase; 
   letter-spacing: 0.5px;
 }
 
@@ -55,14 +43,9 @@
   font-weight: 600;
   font-size: 15px;
 }
-
-/* ------------------------------------
-   CARD BODY
-   Middle section with book info
-   ------------------------------------ */
 .book-card-body {
   padding: 25px;
-  flex: 1; /* Take up remaining space */
+  flex: 1; 
   display: flex;
   flex-direction: column;
 }
@@ -74,7 +57,6 @@
   margin-bottom: 8px;
   font-weight: 700;
   line-height: 1.3;
-  /* Limit to 2 lines */
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
@@ -95,17 +77,11 @@
   font-size: 14px;
   line-height: 1.6;
   flex: 1;
-  /* Limit to 3 lines */
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
-
-/* ------------------------------------
-   CARD FOOTER
-   Bottom section with button
-   ------------------------------------ */
 .book-card-footer {
   padding: 0 25px 25px;
 }
@@ -115,7 +91,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 8px; /* Space between text and arrow */
+  gap: 8px; 
   background: var(--blue);
   color: white;
   padding: 12px 25px;
@@ -129,10 +105,6 @@
 .view-details-btn:hover {
   background: var(--purple);
 }
-
-/* ------------------------------------
-   RESPONSIVE DESIGN
-   ------------------------------------ */
 
 /* For tablets and phones */
 @media (max-width: 768px) {

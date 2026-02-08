@@ -1,9 +1,4 @@
-/* ==========================================
-   BEGINNER-FRIENDLY CSS - index.css
-   This file resets basic HTML elements
-   ========================================== */
 
-/* Smooth scrolling when clicking links */
 html {
   scroll-behavior: smooth;
 }
@@ -23,7 +18,7 @@ body {
 /* Remove default button styles */
 button {
   font-family: inherit;
-  cursor: pointer; /* Show pointer hand on hover */
+  cursor: pointer; 
   border: none;
   outline: none;
   background: none;

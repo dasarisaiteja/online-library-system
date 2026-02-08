@@ -1,22 +1,10 @@
-/* ==========================================
-   BEGINNER-FRIENDLY CSS - browseBook.css
-   This file styles the browse books page
-   ========================================== */
 
-/* ------------------------------------
-   BROWSE PAGE CONTAINER
-   ------------------------------------ */
 .browse-page {
   max-width: 1400px;
-  margin: 0 auto; /* Center the page */
+  margin: 0 auto; 
   padding: 30px;
   min-height: calc(100vh - 80px);
 }
-
-/* ------------------------------------
-   PAGE HEADER
-   Title and subtitle at the top
-   ------------------------------------ */
 .browse-header {
   text-align: center;
   margin-bottom: 50px;
@@ -43,10 +31,6 @@
   margin: 0 auto;
 }
 
-/* ------------------------------------
-   SEARCH SECTION
-   The search bar area
-   ------------------------------------ */
 .search-section {
   margin-bottom: 50px;
 }
@@ -79,7 +63,7 @@
 
 /* Search input field */
 .search-input {
-  flex: 1; /* Take remaining space */
+  flex: 1; 
   border: none;
   outline: none;
   font-size: 16px;
@@ -96,7 +80,7 @@
 .clear-search {
   background: var(--lighter-gray);
   color: var(--gray-text);
-  border-radius: 50%; /* Make it circular */
+  border-radius: 50%; 
   width: 28px;
   height: 28px;
   display: flex;
@@ -112,9 +96,6 @@
   color: white;
 }
 
-/* ------------------------------------
-   BOOKS CONTAINER
-   ------------------------------------ */
 .books-container {
   margin-top: 30px;
 }
@@ -131,14 +112,10 @@
 /* Grid of book cards */
 .books-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  grid-template-columns: repeat(3, 1fr); 
   gap: 30px;
 }
 
-/* ------------------------------------
-   NO RESULTS MESSAGE
-   Shows when no books are found
-   ------------------------------------ */
 .no-results {
   text-align: center;
   padding: 80px 30px;
@@ -171,14 +148,11 @@
   line-height: 1.6;
 }
 
-/* ------------------------------------
-   RESPONSIVE DESIGN
-   ------------------------------------ */
 
 /* For tablets */
 @media (max-width: 1024px) {
   .books-grid {
-    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    grid-template-columns: repeat(2, 1fr); 
   }
 }
 
@@ -241,7 +215,7 @@
   }
   
   .books-grid {
-    grid-template-columns: 1fr; /* 1 column */
+    grid-template-columns: 1fr;
     gap: 20px;
   }
   

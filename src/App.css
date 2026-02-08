@@ -1,12 +1,4 @@
-/* ==========================================
-   BEGINNER-FRIENDLY CSS - App.css
-   This file contains the main styles for the entire app
-   ========================================== */
 
-/* ------------------------------------
-   STEP 1: Define Color Variables
-   These are like nicknames for colors we'll use throughout
-   ------------------------------------ */
 :root {
   /* Main Colors */
   --blue: #3b82f6;
@@ -29,20 +21,12 @@
   --border-gray: #e5e7eb;
 }
 
-/* ------------------------------------
-   STEP 2: Reset Default Styles
-   This removes default browser spacing
-   ------------------------------------ */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* ------------------------------------
-   STEP 3: Body Styles
-   Sets the default font and background
-   ------------------------------------ */
 body {
   font-family: Arial, sans-serif;
   background-color: var(--light-gray);
@@ -50,27 +34,15 @@ body {
   line-height: 1.6;
 }
 
-/* ------------------------------------
-   STEP 4: App Layout
-   Makes sure the app takes full height
-   ------------------------------------ */
 .app {
-  min-height: 100vh; /* 100% of screen height */
+  min-height: 100vh; 
 }
 
-/* ------------------------------------
-   STEP 5: Main Content Area
-   Adds space at the top for the navigation bar
-   ------------------------------------ */
 .main-content {
-  padding-top: 80px; /* Space for fixed navbar */
-  min-height: calc(100vh - 80px); /* Full height minus navbar */
+  padding-top: 80px; 
+  min-height: calc(100vh - 80px); 
 }
 
-/* ------------------------------------
-   STEP 6: Heading Styles
-   Makes headings look nice
-   ------------------------------------ */
 h1 {
   font-size: 40px;
   font-weight: bold;
@@ -92,27 +64,16 @@ h3 {
   margin-bottom: 8px;
 }
 
-/* ------------------------------------
-   STEP 7: Paragraph Styles
-   ------------------------------------ */
 p {
   color: var(--gray-text);
   line-height: 1.7;
 }
 
-/* ------------------------------------
-   STEP 8: Link Styles
-   Removes underlines from links
-   ------------------------------------ */
 a {
-  text-decoration: none; /* No underline */
-  color: inherit; /* Use parent color */
+  text-decoration: none; 
+  color: inherit; 
 }
 
-/* ------------------------------------
-   STEP 9: Custom Scrollbar (Optional)
-   Makes the scrollbar look better
-   ------------------------------------ */
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -126,10 +87,6 @@ a {
   border-radius: 5px;
 }
 
-/* ------------------------------------
-   STEP 10: Responsive Design
-   Makes it look good on phones and tablets
-   ------------------------------------ */
 
 /* For tablets and smaller */
 @media (max-width: 768px) {

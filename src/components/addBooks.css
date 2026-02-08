@@ -1,11 +1,4 @@
-/* ==========================================
-   BEGINNER-FRIENDLY CSS - addBooks.css
-   This file styles the add book form page
-   ========================================== */
 
-/* ------------------------------------
-   ADD BOOK PAGE CONTAINER
-   ------------------------------------ */
 .add-book-page {
   max-width: 700px;
   margin: 0 auto;
@@ -13,10 +6,6 @@
   min-height: calc(100vh - 80px);
 }
 
-/* ------------------------------------
-   FORM CONTAINER
-   The white box containing the form
-   ------------------------------------ */
 .add-book-container {
   background: white;
   border-radius: 20px;
@@ -45,20 +34,12 @@
   margin-bottom: 40px;
 }
 
-/* ------------------------------------
-   FORM LAYOUT
-   Stacks form fields vertically
-   ------------------------------------ */
 form {
   display: flex;
   flex-direction: column;
-  gap: 25px; /* Space between fields */
+  gap: 25px; 
 }
 
-/* ------------------------------------
-   INPUT FIELDS
-   Text inputs, number inputs, and textareas
-   ------------------------------------ */
 input[type="text"],
 input[type="number"],
 select,
@@ -90,13 +71,9 @@ textarea::placeholder {
   color: var(--light-text);
 }
 
-/* ------------------------------------
-   SELECT DROPDOWN
-   ------------------------------------ */
 select {
   cursor: pointer;
-  appearance: none; /* Remove default arrow */
-  /* Add custom dropdown arrow */
+  appearance: none; 
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%236b7280' d='M6 9L1 4h10z'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
   background-position: right 15px center;
@@ -110,38 +87,26 @@ select option {
   padding: 8px;
 }
 
-/* ------------------------------------
-   TEXTAREA
-   For the description field
-   ------------------------------------ */
 textarea {
   min-height: 150px;
-  resize: vertical; /* Allow vertical resizing only */
+  resize: vertical; 
   font-family: inherit;
   line-height: 1.6;
 }
 
-/* ------------------------------------
-   NEW: HELPER TEXT
-   Shows helpful tips below inputs
-   ------------------------------------ */
 .helper-text {
   color: var(--light-text);
   font-size: 13px;
-  margin-top: -20px; /* Move up closer to input */
+  margin-top: -20px; 
   margin-bottom: 5px;
   padding-left: 5px;
   font-style: italic;
 }
 
-/* ------------------------------------
-   ERROR MESSAGES
-   Shows when form validation fails
-   ------------------------------------ */
 .error-message {
   color: var(--red);
   font-size: 14px;
-  margin-top: -15px; /* Move up closer to input */
+  margin-top: -15px; 
   margin-bottom: 8px;
   padding-left: 5px;
   font-weight: 500;
@@ -156,10 +121,6 @@ textarea {
   font-size: 16px;
 }
 
-/* ------------------------------------
-   SUBMIT BUTTON
-   The "Add Book" button
-   ------------------------------------ */
 button[type="submit"] {
   width: 100%;
   padding: 18px 30px;
@@ -176,7 +137,7 @@ button[type="submit"] {
 
 /* Button hover effect */
 button[type="submit"]:hover:not(:disabled) {
-  transform: translateY(-3px); /* Move up */
+  transform: translateY(-3px); 
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
 }
 
@@ -192,10 +153,6 @@ button[type="submit"]:disabled {
   background: var(--light-text);
 }
 
-/* ------------------------------------
-   ERROR STATE
-   Red borders when validation fails
-   ------------------------------------ */
 input.error,
 select.error,
 textarea.error {
@@ -209,9 +166,6 @@ textarea.error:focus {
   box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.1);
 }
 
-/* ------------------------------------
-   RESPONSIVE DESIGN
-   ------------------------------------ */
 
 /* For tablets */
 @media (max-width: 768px) {

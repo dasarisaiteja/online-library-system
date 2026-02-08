@@ -1,46 +1,29 @@
-/* ==========================================
-   BEGINNER-FRIENDLY CSS - navBar.css
-   This file styles the navigation bar at the top
-   ========================================== */
 
-/* ------------------------------------
-   NAVIGATION BAR CONTAINER
-   Stays at the top of the page
-   ------------------------------------ */
 .navigation {
-  position: fixed; /* Stays at top when scrolling */
+  position: fixed; 
   top: 0;
   left: 0;
   right: 0;
   background: white;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  z-index: 1000; /* Appears above other elements */
+  z-index: 1000; 
   border-bottom: 1px solid var(--border-gray);
 }
 
-/* ------------------------------------
-   NAVIGATION INNER CONTAINER
-   Centers the content and adds padding
-   ------------------------------------ */
 .nav-container {
   max-width: 1400px;
-  margin: 0 auto; /* Center it */
+  margin: 0 auto; 
   padding: 0 30px;
-  display: flex; /* Side by side layout */
-  justify-content: space-between; /* Space between brand and links */
-  align-items: center; /* Vertically centered */
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
   height: 80px;
 }
 
-/* ------------------------------------
-   BRAND (LOGO) SECTION
-   The "Online Library" logo on the left
-   FIXED: Updated comment to match actual brand name
-   ------------------------------------ */
 .nav-brand a {
   display: flex;
   align-items: center;
-  gap: 12px; /* Space between icon and text */
+  gap: 12px; 
   font-size: 24px;
   font-weight: bold;
   color: var(--blue);
@@ -64,13 +47,9 @@
   background-clip: text;
 }
 
-/* ------------------------------------
-   NAVIGATION LINKS
-   The links on the right side
-   ------------------------------------ */
 .nav-links {
   display: flex;
-  gap: 40px; /* Space between links */
+  gap: 40px; 
   align-items: center;
 }
 
@@ -81,7 +60,7 @@
   font-size: 16px;
   padding: 8px 16px;
   border-radius: 8px;
-  transition: all 0.3s ease; /* Smooth color change */
+  transition: all 0.3s ease; 
 }
 
 /* When hovering over a link */
@@ -96,11 +75,6 @@
   background: var(--lighter-gray);
   font-weight: 600;
 }
-
-/* ------------------------------------
-   RESPONSIVE DESIGN
-   Make it work on smaller screens
-   ------------------------------------ */
 
 /* For tablets */
 @media (max-width: 768px) {

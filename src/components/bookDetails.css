@@ -1,26 +1,15 @@
-/* ==========================================
-   BEGINNER-FRIENDLY CSS - bookDetails.css
-   This file styles the book details page WITH IMAGE
-   ========================================== */
 
-/* ------------------------------------
-   BOOK DETAILS PAGE CONTAINER
-   ------------------------------------ */
 .book-details-page {
-  max-width: 1200px; /* Made wider for image layout */
+  max-width: 1200px; 
   margin: 0 auto;
   padding: 30px;
   min-height: calc(100vh - 80px);
 }
 
-/* ------------------------------------
-   BACK BUTTON
-   The button at the top to go back
-   ------------------------------------ */
 .back-button {
   display: flex;
   align-items: center;
-  gap: 8px; /* Space between arrow and text */
+  gap: 8px; 
   background: white;
   color: var(--gray-text);
   padding: 12px 25px;
@@ -38,10 +27,6 @@
   color: var(--blue);
 }
 
-/* ------------------------------------
-   BOOK DETAILS CARD
-   The main card with all book info
-   ------------------------------------ */
 .book-details-card {
   background: white;
   border-radius: 20px;
@@ -50,10 +35,6 @@
   border: 1px solid var(--border-gray);
 }
 
-/* ------------------------------------
-   CARD HEADER (Purple section)
-   The colorful top section
-   ------------------------------------ */
 .book-details-header {
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   padding: 40px 50px;
@@ -65,7 +46,7 @@
   display: flex;
   gap: 25px;
   align-items: center;
-  flex-wrap: wrap; /* Wrap on small screens */
+  flex-wrap: wrap; 
 }
 
 /* Category badge */
@@ -76,7 +57,7 @@
   border-radius: 12px;
   font-weight: 700;
   font-size: 14px;
-  text-transform: uppercase; /* ALL CAPS */
+  text-transform: uppercase; 
   letter-spacing: 0.5px;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
 }
@@ -92,39 +73,27 @@
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* ------------------------------------
-   CARD CONTENT (White section)
-   The main content area below header
-   ------------------------------------ */
 .book-details-content {
   padding: 50px;
 }
 
-/* ------------------------------------
-   NEW: BOOK MAIN SECTION
-   Layout with image on left, info on right
-   ------------------------------------ */
 .book-main-section {
-  display: flex; /* Side by side layout */
-  gap: 40px; /* Space between image and info */
+  display: flex; 
+  gap: 40px; 
   margin-bottom: 40px;
 }
 
-/* ------------------------------------
-   NEW: BOOK IMAGE CONTAINER
-   Contains the book cover image
-   ------------------------------------ */
 .book-image-container {
-  flex-shrink: 0; /* Don't shrink the image */
-  width: 300px; /* Fixed width for image */
+  flex-shrink: 0; 
+  width: 300px; 
   position: relative;
 }
 
 /* The book cover image */
 .book-cover-image {
   width: 100%;
-  height: 450px; /* Fixed height */
-  object-fit: cover; /* Crop to fit nicely */
+  height: 450px; 
+  object-fit: cover; 
   border-radius: 12px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
   border: 1px solid var(--border-gray);
@@ -168,12 +137,8 @@
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* ------------------------------------
-   BOOK INFO SECTION
-   Text content next to the image
-   ------------------------------------ */
 .book-info-section {
-  flex: 1; /* Take remaining space */
+  flex: 1; 
 }
 
 /* Book title */
@@ -201,12 +166,8 @@
   font-weight: 400;
 }
 
-/* ------------------------------------
-   DESCRIPTION SECTION
-   The "About This Book" section
-   ------------------------------------ */
 .book-description-section {
-  margin-bottom: 0; /* Removed bottom margin */
+  margin-bottom: 0; 
   padding: 25px;
   background: var(--light-gray);
   border-radius: 12px;
@@ -228,13 +189,9 @@
   color: var(--gray-text);
 }
 
-/* ------------------------------------
-   INFO GRID
-   The grid showing category, rating, etc.
-   ------------------------------------ */
 .book-info-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 columns */
+  grid-template-columns: repeat(4, 1fr); 
   gap: 25px;
   margin-bottom: 40px;
   padding: 30px;
@@ -254,7 +211,7 @@
   color: var(--light-text);
   font-size: 14px;
   font-weight: 600;
-  text-transform: uppercase; /* ALL CAPS */
+  text-transform: uppercase; 
   letter-spacing: 0.5px;
 }
 
@@ -264,11 +221,6 @@
   font-size: 18px;
   font-weight: 600;
 }
-
-/* ------------------------------------
-   ACTION BUTTONS
-   Buttons at the bottom
-   ------------------------------------ */
 .action-buttons {
   display: flex;
   gap: 15px;
@@ -291,14 +243,9 @@
 
 /* Button hover effect */
 .category-link-btn:hover {
-  transform: translateY(-3px); /* Move up */
+  transform: translateY(-3px); 
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
 }
-
-/* ------------------------------------
-   BOOK NOT FOUND
-   Shows when book doesn't exist
-   ------------------------------------ */
 .book-not-found {
   text-align: center;
   padding: 80px 30px;
@@ -328,14 +275,9 @@
   margin-bottom: 30px;
 }
 
-/* ------------------------------------
-   RESPONSIVE DESIGN
-   ------------------------------------ */
-
-/* For laptops and smaller */
 @media (max-width: 1024px) {
   .book-image-container {
-    width: 250px; /* Smaller image */
+    width: 250px; 
   }
   
   .book-cover-image,
@@ -348,7 +290,7 @@
   }
   
   .book-info-grid {
-    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    grid-template-columns: repeat(2, 1fr); 
   }
 }
 
@@ -371,16 +313,16 @@
     padding: 30px 25px;
   }
   
-  /* IMPORTANT: Stack image on top of info */
+
   .book-main-section {
-    flex-direction: column; /* Stack vertically */
+    flex-direction: column; 
     gap: 30px;
   }
   
   .book-image-container {
-    width: 100%; /* Full width */
-    max-width: 300px; /* But not too wide */
-    margin: 0 auto; /* Center it */
+    width: 100%; 
+    max-width: 300px; 
+    margin: 0 auto; 
   }
   
   .book-cover-image,
@@ -437,7 +379,7 @@
   }
   
   .book-info-grid {
-    grid-template-columns: 1fr; /* 1 column */
+    grid-template-columns: 1fr; 
   }
   
   .category-link-btn {
@@ -446,7 +388,7 @@
   }
   
   .book-image-container {
-    max-width: 100%; /* Full width on small phones */
+    max-width: 100%; 
   }
   
   .book-cover-image,
