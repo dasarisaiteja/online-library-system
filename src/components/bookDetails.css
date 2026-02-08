@@ -1,0 +1,456 @@
+/* ==========================================
+   BEGINNER-FRIENDLY CSS - bookDetails.css
+   This file styles the book details page WITH IMAGE
+   ========================================== */
+
+/* ------------------------------------
+   BOOK DETAILS PAGE CONTAINER
+   ------------------------------------ */
+.book-details-page {
+  max-width: 1200px; /* Made wider for image layout */
+  margin: 0 auto;
+  padding: 30px;
+  min-height: calc(100vh - 80px);
+}
+
+/* ------------------------------------
+   BACK BUTTON
+   The button at the top to go back
+   ------------------------------------ */
+.back-button {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Space between arrow and text */
+  background: white;
+  color: var(--gray-text);
+  padding: 12px 25px;
+  border-radius: 8px;
+  font-weight: 500;
+  margin-bottom: 30px;
+  border: 1px solid var(--border-gray);
+  cursor: pointer;
+}
+
+/* Back button hover effect */
+.back-button:hover {
+  background: var(--lighter-gray);
+  border-color: var(--blue);
+  color: var(--blue);
+}
+
+/* ------------------------------------
+   BOOK DETAILS CARD
+   The main card with all book info
+   ------------------------------------ */
+.book-details-card {
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  border: 1px solid var(--border-gray);
+}
+
+/* ------------------------------------
+   CARD HEADER (Purple section)
+   The colorful top section
+   ------------------------------------ */
+.book-details-header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 40px 50px;
+  border-bottom: 3px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Container for category and rating */
+.book-meta {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  flex-wrap: wrap; /* Wrap on small screens */
+}
+
+/* Category badge */
+.book-category-badge {
+  background: white;
+  color: #667eea;
+  padding: 10px 25px;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase; /* ALL CAPS */
+  letter-spacing: 0.5px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Rating display */
+.book-rating-large {
+  color: var(--yellow);
+  background: white;
+  padding: 10px 20px;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 18px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ------------------------------------
+   CARD CONTENT (White section)
+   The main content area below header
+   ------------------------------------ */
+.book-details-content {
+  padding: 50px;
+}
+
+/* ------------------------------------
+   NEW: BOOK MAIN SECTION
+   Layout with image on left, info on right
+   ------------------------------------ */
+.book-main-section {
+  display: flex; /* Side by side layout */
+  gap: 40px; /* Space between image and info */
+  margin-bottom: 40px;
+}
+
+/* ------------------------------------
+   NEW: BOOK IMAGE CONTAINER
+   Contains the book cover image
+   ------------------------------------ */
+.book-image-container {
+  flex-shrink: 0; /* Don't shrink the image */
+  width: 300px; /* Fixed width for image */
+  position: relative;
+}
+
+/* The book cover image */
+.book-cover-image {
+  width: 100%;
+  height: 450px; /* Fixed height */
+  object-fit: cover; /* Crop to fit nicely */
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  border: 1px solid var(--border-gray);
+}
+
+/* Placeholder when no image available */
+.book-placeholder {
+  width: 100%;
+  height: 450px;
+  background: var(--lighter-gray);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px dashed var(--border-gray);
+}
+
+.placeholder-icon {
+  font-size: 80px;
+  margin-bottom: 15px;
+  opacity: 0.5;
+}
+
+.book-placeholder p {
+  color: var(--light-text);
+  font-size: 16px;
+}
+
+/* NEW: Book price badge */
+.book-price {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: var(--yellow);
+  color: var(--dark-text);
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 18px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* ------------------------------------
+   BOOK INFO SECTION
+   Text content next to the image
+   ------------------------------------ */
+.book-info-section {
+  flex: 1; /* Take remaining space */
+}
+
+/* Book title */
+.book-title-large {
+  font-size: 40px;
+  color: var(--dark-text);
+  margin-bottom: 15px;
+  line-height: 1.2;
+  font-weight: 800;
+}
+
+/* Author name */
+.book-author-large {
+  font-size: 20px;
+  color: var(--gray-text);
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* The "by" label */
+.author-label {
+  color: var(--light-text);
+  font-weight: 400;
+}
+
+/* ------------------------------------
+   DESCRIPTION SECTION
+   The "About This Book" section
+   ------------------------------------ */
+.book-description-section {
+  margin-bottom: 0; /* Removed bottom margin */
+  padding: 25px;
+  background: var(--light-gray);
+  border-radius: 12px;
+  border-left: 4px solid var(--blue);
+}
+
+/* Section heading */
+.section-heading {
+  font-size: 20px;
+  color: var(--dark-text);
+  margin-bottom: 12px;
+  font-weight: 700;
+}
+
+/* Full description text */
+.book-description-full {
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--gray-text);
+}
+
+/* ------------------------------------
+   INFO GRID
+   The grid showing category, rating, etc.
+   ------------------------------------ */
+.book-info-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns */
+  gap: 25px;
+  margin-bottom: 40px;
+  padding: 30px;
+  background: var(--lighter-gray);
+  border-radius: 12px;
+}
+
+/* Individual info item */
+.info-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Label (like "Category", "Rating") */
+.info-label {
+  color: var(--light-text);
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase; /* ALL CAPS */
+  letter-spacing: 0.5px;
+}
+
+/* Value (like "Fiction", "4.5 ⭐") */
+.info-value {
+  color: var(--dark-text);
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* ------------------------------------
+   ACTION BUTTONS
+   Buttons at the bottom
+   ------------------------------------ */
+.action-buttons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+/* "More [Category] Books" button */
+.category-link-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: linear-gradient(135deg, var(--blue), var(--purple));
+  color: white;
+  padding: 16px 32px;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 16px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Button hover effect */
+.category-link-btn:hover {
+  transform: translateY(-3px); /* Move up */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* ------------------------------------
+   BOOK NOT FOUND
+   Shows when book doesn't exist
+   ------------------------------------ */
+.book-not-found {
+  text-align: center;
+  padding: 80px 30px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  margin-top: 50px;
+}
+
+/* Error icon emoji */
+.error-icon {
+  font-size: 96px;
+  margin-bottom: 25px;
+}
+
+/* "Book Not Found" heading */
+.book-not-found h2 {
+  font-size: 32px;
+  color: var(--dark-text);
+  margin-bottom: 15px;
+}
+
+/* Error message */
+.book-not-found p {
+  font-size: 18px;
+  color: var(--gray-text);
+  margin-bottom: 30px;
+}
+
+/* ------------------------------------
+   RESPONSIVE DESIGN
+   ------------------------------------ */
+
+/* For laptops and smaller */
+@media (max-width: 1024px) {
+  .book-image-container {
+    width: 250px; /* Smaller image */
+  }
+  
+  .book-cover-image,
+  .book-placeholder {
+    height: 380px;
+  }
+  
+  .book-title-large {
+    font-size: 36px;
+  }
+  
+  .book-info-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  }
+}
+
+/* For tablets */
+@media (max-width: 768px) {
+  .book-details-page {
+    padding: 25px;
+  }
+  
+  .back-button {
+    padding: 10px 20px;
+    font-size: 15px;
+  }
+  
+  .book-details-header {
+    padding: 30px 25px;
+  }
+  
+  .book-details-content {
+    padding: 30px 25px;
+  }
+  
+  /* IMPORTANT: Stack image on top of info */
+  .book-main-section {
+    flex-direction: column; /* Stack vertically */
+    gap: 30px;
+  }
+  
+  .book-image-container {
+    width: 100%; /* Full width */
+    max-width: 300px; /* But not too wide */
+    margin: 0 auto; /* Center it */
+  }
+  
+  .book-cover-image,
+  .book-placeholder {
+    height: 400px;
+  }
+  
+  .book-title-large {
+    font-size: 32px;
+  }
+  
+  .book-author-large {
+    font-size: 18px;
+  }
+  
+  .book-description-section {
+    padding: 20px;
+  }
+  
+  .section-heading {
+    font-size: 18px;
+  }
+  
+  .book-description-full {
+    font-size: 15px;
+  }
+  
+  .book-info-grid {
+    gap: 20px;
+    padding: 25px;
+  }
+}
+
+/* For phones */
+@media (max-width: 480px) {
+  .book-details-page {
+    padding: 15px;
+  }
+  
+  .book-details-header {
+    padding: 25px 15px;
+  }
+  
+  .book-details-content {
+    padding: 25px 15px;
+  }
+  
+  .book-title-large {
+    font-size: 28px;
+  }
+  
+  .book-meta {
+    gap: 15px;
+  }
+  
+  .book-info-grid {
+    grid-template-columns: 1fr; /* 1 column */
+  }
+  
+  .category-link-btn {
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .book-image-container {
+    max-width: 100%; /* Full width on small phones */
+  }
+  
+  .book-cover-image,
+  .book-placeholder {
+    height: 350px;
+  }
+}

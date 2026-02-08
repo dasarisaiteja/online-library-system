@@ -1,0 +1,251 @@
+/* ==========================================
+   BEGINNER-FRIENDLY CSS - browseBook.css
+   This file styles the browse books page
+   ========================================== */
+
+/* ------------------------------------
+   BROWSE PAGE CONTAINER
+   ------------------------------------ */
+.browse-page {
+  max-width: 1400px;
+  margin: 0 auto; /* Center the page */
+  padding: 30px;
+  min-height: calc(100vh - 80px);
+}
+
+/* ------------------------------------
+   PAGE HEADER
+   Title and subtitle at the top
+   ------------------------------------ */
+.browse-header {
+  text-align: center;
+  margin-bottom: 50px;
+  padding-bottom: 30px;
+  border-bottom: 2px solid var(--border-gray);
+}
+
+/* Main page title */
+.page-title {
+  font-size: 44px;
+  color: var(--dark-text);
+  margin-bottom: 12px;
+  background: linear-gradient(135deg, var(--blue), var(--purple));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Subtitle text */
+.page-subtitle {
+  font-size: 18px;
+  color: var(--gray-text);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* ------------------------------------
+   SEARCH SECTION
+   The search bar area
+   ------------------------------------ */
+.search-section {
+  margin-bottom: 50px;
+}
+
+/* Search bar container */
+.search-container {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  background: white;
+  border: 2px solid var(--border-gray);
+  border-radius: 12px;
+  padding: 12px 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* When clicking inside search box */
+.search-container:focus-within {
+  border-color: var(--blue);
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+/* Search icon (magnifying glass emoji) */
+.search-icon {
+  font-size: 20px;
+  color: var(--light-text);
+  margin-right: 15px;
+}
+
+/* Search input field */
+.search-input {
+  flex: 1; /* Take remaining space */
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color: var(--dark-text);
+  background: transparent;
+}
+
+/* Placeholder text color */
+.search-input::placeholder {
+  color: var(--light-text);
+}
+
+/* Clear button (X) */
+.clear-search {
+  background: var(--lighter-gray);
+  color: var(--gray-text);
+  border-radius: 50%; /* Make it circular */
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  margin-left: 10px;
+}
+
+/* Clear button hover */
+.clear-search:hover {
+  background: var(--red);
+  color: white;
+}
+
+/* ------------------------------------
+   BOOKS CONTAINER
+   ------------------------------------ */
+.books-container {
+  margin-top: 30px;
+}
+
+/* Results count text */
+.results-count {
+  color: var(--gray-text);
+  font-size: 15px;
+  margin-bottom: 25px;
+  font-weight: 500;
+  padding-left: 5px;
+}
+
+/* Grid of book cards */
+.books-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 30px;
+}
+
+/* ------------------------------------
+   NO RESULTS MESSAGE
+   Shows when no books are found
+   ------------------------------------ */
+.no-results {
+  text-align: center;
+  padding: 80px 30px;
+  background: white;
+  border-radius: 20px;
+  margin-top: 50px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Book icon emoji */
+.no-results-icon {
+  font-size: 80px;
+  margin-bottom: 25px;
+  opacity: 0.6;
+}
+
+/* "No books found" heading */
+.no-results h3 {
+  font-size: 28px;
+  color: var(--dark-text);
+  margin-bottom: 12px;
+}
+
+/* Message text */
+.no-results p {
+  color: var(--gray-text);
+  font-size: 17px;
+  max-width: 500px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* ------------------------------------
+   RESPONSIVE DESIGN
+   ------------------------------------ */
+
+/* For tablets */
+@media (max-width: 1024px) {
+  .books-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  }
+}
+
+/* For tablets and smaller */
+@media (max-width: 768px) {
+  .browse-page {
+    padding: 25px;
+  }
+  
+  .browse-header {
+    margin-bottom: 40px;
+    padding-bottom: 25px;
+  }
+  
+  .page-title {
+    font-size: 32px;
+  }
+  
+  .page-subtitle {
+    font-size: 16px;
+  }
+  
+  .search-section {
+    margin-bottom: 40px;
+  }
+  
+  .search-container {
+    padding: 10px 16px;
+  }
+  
+  .search-input {
+    font-size: 15px;
+  }
+  
+  .books-grid {
+    gap: 25px;
+  }
+  
+  .no-results {
+    padding: 60px 25px;
+  }
+  
+  .no-results-icon {
+    font-size: 64px;
+  }
+  
+  .no-results h3 {
+    font-size: 24px;
+  }
+}
+
+/* For phones */
+@media (max-width: 480px) {
+  .browse-page {
+    padding: 15px;
+  }
+  
+  .page-title {
+    font-size: 28px;
+  }
+  
+  .books-grid {
+    grid-template-columns: 1fr; /* 1 column */
+    gap: 20px;
+  }
+  
+  .no-results {
+    padding: 50px 20px;
+  }
+}

@@ -1,0 +1,250 @@
+/* ==========================================
+   BEGINNER-FRIENDLY CSS - home.css
+   This file styles the home page
+   ========================================== */
+
+/* ------------------------------------
+   HOME PAGE CONTAINER
+   ------------------------------------ */
+.home-page {
+  max-width: 1400px;
+  margin: 0 auto; /* Center the page */
+  padding: 30px;
+}
+
+/* ------------------------------------
+   HERO SECTION (Top Banner)
+   The colorful welcome section
+   ------------------------------------ */
+.hero-section {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 20px;
+  padding: 80px 50px;
+  margin-bottom: 60px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.hero-content {
+  max-width: 700px;
+  color: white;
+}
+
+/* Main heading in hero */
+.hero-title {
+  font-size: 56px;
+  color: white;
+  margin-bottom: 20px;
+  line-height: 1.1;
+}
+
+/* Yellow highlighted text */
+.highlight {
+  color: var(--yellow);
+}
+
+/* Subtitle text */
+.hero-subtitle {
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+/* "Explore Library" button */
+.cta-button {
+  display: inline-block;
+  background: white;
+  color: #667eea;
+  padding: 16px 40px;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 18px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Button hover effect */
+.cta-button:hover {
+  transform: translateY(-3px); /* Move up slightly */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* ------------------------------------
+   FLOATING BOOKS DECORATION
+   The animated book emojis on the right
+   ------------------------------------ */
+.hero-decoration {
+  position: absolute;
+  right: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.floating-book {
+  font-size: 64px;
+  position: absolute;
+  opacity: 0.6;
+}
+
+/* Position each book differently */
+.floating-book.delay-1 {
+  top: -80px;
+  right: 100px;
+}
+
+.floating-book.delay-2 {
+  top: 80px;
+  right: 50px;
+}
+
+/* ------------------------------------
+   SECTION TITLES
+   ------------------------------------ */
+.section-title {
+  font-size: 36px;
+  color: var(--dark-text);
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.section-subtitle {
+  color: var(--gray-text);
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 50px;
+}
+
+/* ------------------------------------
+   CATEGORIES SECTION
+   The grid of category cards
+   ------------------------------------ */
+.categories-section {
+  margin-bottom: 60px;
+}
+
+/* Grid layout for categories */
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns */
+  gap: 25px;
+  margin-top: 30px;
+}
+
+/* Individual category card */
+.category-card {
+  background: white;
+  border: 2px solid var(--border-gray);
+  border-radius: 12px;
+  padding: 40px 30px;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* Card hover effect */
+.category-card:hover {
+  border-color: var(--blue);
+  transform: translateY(-8px); /* Move up */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Category icon emoji */
+.category-icon {
+  font-size: 56px;
+  margin-bottom: 15px;
+  display: inline-block;
+}
+
+/* Category name */
+.category-name {
+  font-size: 24px;
+  color: var(--dark-text);
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+/* Book count text */
+.category-count {
+  color: var(--light-text);
+  font-size: 15px;
+  font-weight: 500;
+}
+
+/* ------------------------------------
+   POPULAR BOOKS SECTION
+   ------------------------------------ */
+.popular-books-section {
+  margin-bottom: 60px;
+}
+
+/* Grid for book cards */
+.books-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 30px;
+  margin-top: 30px;
+}
+
+/* ------------------------------------
+   RESPONSIVE DESIGN
+   ------------------------------------ */
+
+/* For tablets */
+@media (max-width: 1024px) {
+  .hero-section {
+    padding: 60px 40px;
+  }
+  
+  .hero-title {
+    font-size: 44px;
+  }
+  
+  .hero-decoration {
+    display: none; /* Hide floating books */
+  }
+  
+  .categories-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  }
+  
+  .books-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  }
+}
+
+/* For phones */
+@media (max-width: 768px) {
+  .home-page {
+    padding: 20px;
+  }
+  
+  .hero-section {
+    padding: 50px 30px;
+    margin-bottom: 50px;
+  }
+  
+  .hero-title {
+    font-size: 36px;
+  }
+  
+  .hero-subtitle {
+    font-size: 18px;
+  }
+  
+  .cta-button {
+    padding: 14px 32px;
+    font-size: 16px;
+  }
+  
+  .section-title {
+    font-size: 30px;
+  }
+  
+  .categories-grid {
+    grid-template-columns: 1fr; /* 1 column */
+    gap: 20px;
+  }
+  
+  .books-grid {
+    grid-template-columns: 1fr; /* 1 column */
+    gap: 25px;
+  }
+}

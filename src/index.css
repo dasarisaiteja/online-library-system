@@ -1,0 +1,50 @@
+/* ==========================================
+   BEGINNER-FRIENDLY CSS - index.css
+   This file resets basic HTML elements
+   ========================================== */
+
+/* Smooth scrolling when clicking links */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Remove default margin and padding from body */
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+/* Make sure root element is full height */
+#root {
+  min-height: 100vh;
+}
+
+/* Remove default button styles */
+button {
+  font-family: inherit;
+  cursor: pointer; /* Show pointer hand on hover */
+  border: none;
+  outline: none;
+  background: none;
+}
+
+/* Remove default input styles */
+input,
+textarea,
+select {
+  font-family: inherit;
+  outline: none;
+}
+
+/* Remove bullet points from lists */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Make images responsive by default */
+img {
+  max-width: 100%;
+  display: block;
+}
