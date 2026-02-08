@@ -1,4 +1,6 @@
-[
+export const categories = ["Fiction", "Non-Fiction", "Sci-Fi", "Horror"];
+
+export const initialBooks =[
   {
     "id": 1,
     "title": "My Husband's Wife",
@@ -6,8 +8,9 @@
     "category": "Fiction",
     "description": "A psychological thriller where a woman returns home to find another woman living her life, and her husband claiming the stranger is his real wife.",
     "rating": 4.3,
-    "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1725547608i/218320956.jpg",
-    "price": 499
+    "image": "https://m.media-amazon.com/images/I/71pxtg8CZYL._UF1000,1000_QL80_.jpg",
+    "price": 499,
+    "popular": true
   },
   {
     "id": 2,
@@ -16,7 +19,7 @@
     "category": "Sci-Fi",
     "description": "The second installment in The Captive's War trilogy. Dafyd Alkhor must navigate the brutal internal politics of the Carryx empire.",
     "rating": 4.6,
-    "image": "https://m.media-amazon.com/images/I/91N-n6W9uVL._SL1500_.jpg",
+    "image": "https://m.media-amazon.com/images/I/81SF4dGC8jL._AC_UF1000,1000_QL80_.jpg",
     "price": 650
   },
   {
@@ -36,7 +39,7 @@
     "category": "Non-Fiction",
     "description": "Explores the science of how small, everyday psychological 'tweaks' can lead to massive societal changes.",
     "rating": 4.5,
-    "image": "https://m.media-amazon.com/images/I/71R2o58mX3L._SL1500_.jpg",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9xEUumRz8agQRv7CNQP-IFcx4JJ4f-BqPmw&s",
     "price": 550
   },
   {
@@ -46,7 +49,7 @@
     "category": "Fiction",
     "description": "A gothic romantasy following a necromancer and a conqueror's heir fighting for survival on a cursed island.",
     "rating": 4.4,
-    "image": "https://m.media-amazon.com/images/I/81v7i2+M9-L._SL1500_.jpg",
+    "image": "https://m.media-amazon.com/images/I/71J1ebz3xUL._AC_UF1000,1000_QL80_.jpg",
     "price": 525
   },
   {
@@ -56,7 +59,7 @@
     "category": "Horror",
     "description": "A South African gothic tale where a podcaster uncovers the horrors of a colonial mansion and a brutal regime.",
     "rating": 4.0,
-    "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1731522045i/220084334.jpg",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTIIVCPzTdMXRLhseNZKGMFx90WmRFk1WqCg&s",
     "price": 475
   },
   {
@@ -66,7 +69,7 @@
     "category": "Fiction",
     "description": "A dark academic fantasy where a student descends into the underworld to rescue her advisor.",
     "rating": 4.7,
-    "image": "https://m.media-amazon.com/images/I/81KxS2nFzDL._SL1500_.jpg",
+    "image": "https://m.media-amazon.com/images/I/81YpIeJ10gL._UF1000,1000_QL80_.jpg",
     "price": 599
   },
   {
@@ -76,7 +79,7 @@
     "category": "Fiction",
     "description": "An advice columnist's life spirals out of control, leading her to take her own dangerous advice.",
     "rating": 4.1,
-    "image": "https://m.media-amazon.com/images/I/81hD0V30WmL._SL1500_.jpg",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWkWQH6EUUyjBr3i9f3vwRErgVfDTrcGiBPw&s",
     "price": 425
   },
   {
@@ -86,7 +89,7 @@
     "category": "Sci-Fi",
     "description": "The evolution of the Children of Time universe continues as space-faring humans encounter new alien threats.",
     "rating": 4.5,
-    "image": "https://m.media-amazon.com/images/I/91eK6S6V9cL._SL1500_.jpg",
+    "image": "https://m.media-amazon.com/images/I/81J0w2phmUL._UF1000,1000_QL80_.jpg",
     "price": 750
   },
   {
@@ -96,7 +99,7 @@
     "category": "Horror",
     "description": "A haunting gothic horror tale set in a woodland that literally remembers the blood spilled on its soil.",
     "rating": 4.2,
-    "image": "https://m.media-amazon.com/images/I/81E1N8F9zUL._SL1500_.jpg",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRagp8WNkIdUJIjUiCDIRVkfdHBoZiqBvRo8g&s",
     "price": 499
   },
   {
@@ -107,7 +110,8 @@
     "description": "The definitive guide to building good habits and breaking bad ones using the power of 1% improvements.",
     "rating": 4.9,
     "image": "https://m.media-amazon.com/images/I/91bYsX41DVL._SL1500_.jpg",
-    "price": 499
+    "price": 499,
+    "popular": true
   },
   {
     "id": 12,
@@ -116,7 +120,7 @@
     "category": "Fiction",
     "description": "An epic 1980s romance and drama set against the high-stakes backdrop of NASA's space shuttle program.",
     "rating": 4.5,
-    "image": "https://m.media-amazon.com/images/I/81UeMEn9O1L._SL1500_.jpg",
+    "image": "https://m.media-amazon.com/images/I/81b-AdU1TWL._AC_UF1000,1000_QL80_.jpg",
     "price": 550
   },
   {
@@ -126,7 +130,7 @@
     "category": "Horror",
     "description": "A supernatural thriller about a caretaker who realizes his elderly charges are hiding something world-ending.",
     "rating": 4.2,
-    "image": "https://m.media-amazon.com/images/I/81p1+qD1GSL._SL1500_.jpg",
+    "image": "https://m.media-amazon.com/images/I/61ZpR5GXkvL._AC_UF1000,1000_QL80_.jpg",
     "price": 499
   },
   {
@@ -156,7 +160,7 @@
     "category": "Sci-Fi",
     "description": "Toxic corporate interests task human gamers with remotely piloting weapons of war on another world.",
     "rating": 4.4,
-    "image": "https://m.media-amazon.com/images/I/91tP6wP9IuL._SL1500_.jpg",
+    "image": "https://m.media-amazon.com/images/I/810o-u+yzzL._AC_UF1000,1000_QL80_.jpg",
     "price": 650
   },
   {
@@ -166,7 +170,7 @@
     "category": "Horror",
     "description": "A surreal gothic horror debut that reimagines the Mary Shelley era through the eyes of an Indian housemaid.",
     "rating": 4.0,
-    "image": "https://m.media-amazon.com/images/I/81Vq6j3VbWL._SL1500_.jpg",
+    "image": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1370635596i/12261268.jpg",
     "price": 499
   },
   {
@@ -176,7 +180,7 @@
     "category": "Non-Fiction",
     "description": "A deep exploration of how trauma physically reshapes the brain and body and how to heal.",
     "rating": 4.8,
-    "image": "https://m.media-amazon.com/images/I/61N7S9-6HqL._SL1500_.jpg",
+    "image": "https://cdn2.penguin.com.au/covers/original/9780141978611.jpg",
     "price": 699
   },
   {
@@ -186,8 +190,9 @@
     "category": "Sci-Fi",
     "description": "Ryland Grace is the sole survivor on a desperate mission to save the Sun from an alien parasite.",
     "rating": 4.9,
-    "image": "https://m.media-amazon.com/images/I/91McM6N6GUL._SL1500_.jpg",
-    "price": 599
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqgWQXE2ypUFktcSUuBUlJ5-4zGZYHVDiU9g&s",
+    "price": 599,
+    "popular": true
   },
   {
     "id": 20,
@@ -196,7 +201,7 @@
     "category": "Fiction",
     "description": "A legendary film actress reflects on her life, her seven marriages, and her one true secret love.",
     "rating": 4.7,
-    "image": "https://m.media-amazon.com/images/I/71u968kM7NL._SL1500_.jpg",
+    "image": "https://m.media-amazon.com/images/I/81LscKUplaL.jpg",
     "price": 499
   },
   {
@@ -206,7 +211,7 @@
     "category": "Horror",
     "description": "A Southern Gothic tale of feminine rage, inherited trauma, and the monsters we let in.",
     "rating": 4.1,
-    "image": "https://m.media-amazon.com/images/I/81xU+77+JGL._SL1500_.jpg",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPa6i4M8enoqAJZu5tdzMNFGjBPk-q0gcB7A&s",
     "price": 449
   },
   {
@@ -227,7 +232,8 @@
     "description": "A groundbreaking narrative of humanity's creation and evolution, from Stone Age to Silicon Valley.",
     "rating": 4.8,
     "image": "https://m.media-amazon.com/images/I/713jIoMO3UL._SL1500_.jpg",
-    "price": 599
+    "price": 599,
+    "popular": true
   },
   {
     "id": 24,
@@ -237,7 +243,8 @@
     "description": "The classic memoir about surviving concentration camps and the psychological theory of finding purpose.",
     "rating": 4.9,
     "image": "https://cdn.penguin.co.in/wp-content/uploads/2025/01/9781846048708.jpg",
-    "price": 299
+    "price": 299,
+    "popular": true
   },
   {
     "id": 25,
@@ -257,7 +264,8 @@
     "description": "A famous author is 'rescued' from a car crash by his number one fan, who has no intention of letting him go.",
     "rating": 4.8,
     "image": "https://m.media-amazon.com/images/I/51XSBCA2M1L._AC_UF1000,1000_QL80_.jpg",
-    "price": 499
+    "price": 499,
+    "popular": true
   },
   {
     "id": 27,
@@ -267,7 +275,8 @@
     "description": "The epic story of Paul Atreides and the battle for control over the desert planet Arrakis and its precious spice.",
     "rating": 4.7,
     "image": "https://www.hachetteindia.com/Content/images/books/Large_Cover/9781473233959.jpg",
-    "price": 699
+    "price": 699,
+    "popular": true
   },
   {
     "id": 28,
@@ -297,6 +306,7 @@
     "description": "A bold reimagining of the myth of the banishment of the daughter of the Sun god, who turns her enemies into monsters.",
     "rating": 4.6,
     "image": "https://online.fliphtml5.com/cvgwr/lbvq/files/large/a47732ceef8752b5dc0b17a50ac65a3c.webp?1701534868",
-    "price": 499
+    "price": 499,
+    "popular": true
   }
 ]
